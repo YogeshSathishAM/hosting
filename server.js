@@ -73,7 +73,8 @@ app.post("/logout",(req,res)=>{
     else(console.log("session destroyed"))
 
 console.log("the end")
-res.sendFile(path.join(__dirname,"views","index.html"))
+res.redirect("https://dapper-mandazi-f11034.netlify.app/")
+//res.sendFile(path.join(__dirname,"views","index.html")) // in render website
   })
 })
 
