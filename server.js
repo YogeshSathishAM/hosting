@@ -57,15 +57,15 @@ app.get('/auth/google/callback', passport.authenticate('google', {
 
 // Example protected route, app.get to display the user after verification
 app.get('/profile', (req, res) => {
- console.log(req);
-console.log("req.user what is the value")
-console.log(req.user.displayName); 
+//  console.log(req);
+// console.log("req.user what is the value")
+// console.log(req.user.displayName); 
 
-let usernameFromFile = req.user.displayName
+//let usernameFromFile = req.user.displayName
 
 console.log("inputing condition to display the login page")
-if(usernameFromFile)
-res.redirect("dapper-mandazi-f11034.netlify.app/login")
+//if(usernameFromFile)
+res.redirect("dapper-mandazi-f11034.netlify.app/login") // works separately when this url given in webpage as this is hosted in render and netlify website
 //res.sendFile(path.join(__dirname,"views","login.html"))
 })
 
