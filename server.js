@@ -76,7 +76,7 @@ app.post("/logout",(req,res)=>{
     else(console.log("session destroyed"))
 
 console.log("the end")
-res.redirect("https://dapper-mandazi-f11034.netlify.app/") // since we cant access below file in render website which hosts only BE (it doesnt have front end file), we need to redirect to the netlify website URL where the frontend is displayed
+res.redirect("https://dapper-mandazi-f11034.netlify.app") // since we cant access below file in render website which hosts only BE (it doesnt have front end file), we need to redirect to the netlify website URL where the frontend is displayed
 //res.sendFile(path.join(__dirname,"views","index.html")) // in render website
   }) // now change the CALLBACK url of google console also
 })
