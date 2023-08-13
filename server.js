@@ -20,7 +20,7 @@ app.use(session({
 passport.use(new googleOauth2({
   clientID: '437217891511-39ii7e3mjnqq6qmh6qssomoag7b12asb.apps.googleusercontent.com',
   clientSecret: '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',
-  callbackURL: 'http://localhost:3300/auth/google/callback'
+  callbackURL: "https://dapper-mandazi-f11034.netlify.app/auth/google/callback";
 },
 
 (accessToken, refreshToken, profile, done) => {
