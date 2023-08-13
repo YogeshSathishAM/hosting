@@ -65,7 +65,8 @@ let usernameFromFile = req.user.displayName
 
 console.log("inputing condition to display the login page")
 if(usernameFromFile)
-res.sendFile(path.join(__dirname,"views","login.html"))
+res.sendFile("dapper-mandazi-f11034.netlify.app/profile/login.html")
+//res.sendFile(path.join(__dirname,"views","login.html"))
 })
 
 app.post("/logout",(req,res)=>{
