@@ -65,7 +65,7 @@ let usernameFromFile = req.user.displayName
 
 console.log("inputing condition to display the login page")
 if(usernameFromFile)
-res.redirect("dapper-mandazi-f11034.netlify.app/login.html")
+res.redirect("dapper-mandazi-f11034.netlify.app/login")
 //res.sendFile(path.join(__dirname,"views","login.html"))
 })
 
