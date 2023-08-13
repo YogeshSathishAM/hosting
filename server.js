@@ -18,9 +18,9 @@ app.use(session({
 }))
 
 passport.use(new googleOauth2({
-  clientID: '437217891511-39ii7e3mjnqq6qmh6qssomoag7b12asb.apps.googleusercontent.com',
-  clientSecret: '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',
-  callbackURL: "https://dapper-mandazi-f11034.netlify.app/auth/google/callback"
+  clientID: '437217891511-r08ir6tk54caib7emd2asseuukh0uarf.apps.googleusercontent.com',
+  clientSecret: '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',
+  callbackURL: "https://dapper-mandazi-f11034.netlify.app//auth/google/callback"
 },
 
 (accessToken, refreshToken, profile, done) => {
